@@ -1,0 +1,497 @@
+<!DOCTYPE html>
+
+<html lang="id" class="scroll-smooth"></html>>
+
+<head>
+    <meta charset="utf-8" />
+    <meta content="width=device-width, initial-scale=1.0" name="viewport" />
+    <title>Coffee shop di Madiun | KELANA COFFEE SPACE</title>
+    <meta
+        content="Tempat ngopi di Madiun yang nyaman untuk inspirasi. Kelana Coffee Space menyajikan kopi enak, suasana tenang, WiFi cepat, dan parkir luas. Kafe hits Madiun untuk bersantai atau bekerja."
+        name="description" />
+    <link href="https://fonts.googleapis.com" rel="preconnect" />
+    <link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect" />
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&amp;family=Manrope:wght@400;600;700;800&amp;display=swap"
+        rel="stylesheet" />
+    <link
+        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap"
+        rel="stylesheet" />
+    <link
+        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap"
+        rel="stylesheet" />
+    <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+    <script id="tailwind-config">
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    "colors": {
+                        "surface-container-lowest": "#ffffff",
+                        "on-tertiary-fixed-variant": "#51461e",
+                        "inverse-on-surface": "#f2f2d9",
+                        "on-background": "#1b1d0e",
+                        "on-tertiary-fixed": "#231b00",
+                        "on-secondary-container": "#4e6d36",
+                        "secondary": "#486730",
+                        "tertiary-fixed": "#f3e2ac",
+                        "primary-container": "#4b3621",
+                        "on-primary-container": "#bd9f83",
+                        "on-primary-fixed": "#291806",
+                        "surface-container": "#efefd7",
+                        "surface-variant": "#e4e4cc",
+                        "background": "#fbfbe2",
+                        "on-tertiary": "#ffffff",
+                        "outline": "#80756c",
+                        "primary": "#33210d",
+                        "on-error-container": "#93000a",
+                        "secondary-container": "#c9eea9",
+                        "on-surface-variant": "#4e453d",
+                        "primary-fixed-dim": "#e1c1a4",
+                        "surface-container-highest": "#e4e4cc",
+                        "on-error": "#ffffff",
+                        "surface-dim": "#dbdcc3",
+                        "surface-bright": "#fbfbe2",
+                        "on-secondary-fixed-variant": "#314e1b",
+                        "error-container": "#ffdad6",
+                        "on-secondary": "#ffffff",
+                        "error": "#ba1a1a",
+                        "tertiary-fixed-dim": "#d6c692",
+                        "on-tertiary-container": "#493f17",
+                        "inverse-primary": "#e1c1a4",
+                        "inverse-surface": "#303221",
+                        "secondary-fixed": "#c9eea9",
+                        "on-secondary-fixed": "#0b2000",
+                        "outline-variant": "#d2c4ba",
+                        "secondary-fixed-dim": "#aed18f",
+                        "surface-container-high": "#eaead1",
+                        "on-primary": "#ffffff",
+                        "on-surface": "#1b1d0e",
+                        "surface-container-low": "#f5f5dc",
+                        "tertiary": "#6a5e33",
+                        "tertiary-container": "#baaa79",
+                        "primary-fixed": "#fedcbe",
+                        "surface-tint": "#725a42",
+                        "surface": "#fbfbe2",
+                        "on-primary-fixed-variant": "#59422c"
+                    },
+                    "borderRadius": {
+                        "DEFAULT": "0.25rem",
+                        "lg": "0.5rem",
+                        "xl": "0.75rem",
+                        "full": "9999px"
+                    },
+                    "fontFamily": {
+                        "headline": ["Manrope", "sans-serif"],
+                        "body": ["Inter", "sans-serif"],
+                        "label": ["Inter", "sans-serif"]
+                    }
+                }
+            }
+        }
+    </script>
+    <style>
+        body {
+            font-family: 'Inter', sans-serif;
+            background-color: theme('colors.background');
+            color: theme('colors.on-background');
+        }
+
+        h1,
+        h2,
+        h3,
+        h4,
+        h5,
+        h6,
+        .font-headline {
+            font-family: 'Manrope', sans-serif;
+            letter-spacing: -0.02em;
+        }
+
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+        }
+
+        .glass-panel {
+            background: rgba(228, 228, 204, 0.2);
+            backdrop-filter: blur(16px);
+            -webkit-backdrop-filter: blur(16px);
+        }
+
+        .btn-roasted {
+            background: linear-gradient(to right, theme('colors.primary'), theme('colors.primary-container'));
+        }
+    </style>
+</head>
+
+<body
+    class="antialiased min-h-screen flex flex-col selection:bg-secondary-container selection:text-on-secondary-container">
+    <!-- TopNavBar -->
+    <header
+        class="bg-[#fbfbe2]/80 dark:bg-[#1b1d0e]/80 backdrop-blur-lg w-full sticky top-0 z-50 shadow-sm dark:shadow-none">
+        <div class="flex justify-between items-center w-full px-6 py-4 max-w-7xl mx-auto">
+            <div class="text-xl font-bold tracking-tighter text-[#33210d] dark:text-[#fbfbe2] font-['Manrope']">
+                Kelana Coffee Space
+            </div>
+            <nav class="hidden md:flex gap-8 items-center font-['Manrope'] font-semibold tracking-tight">
+                <a class="text-[#33210d] dark:text-[#fbfbe2] hover:text-[#486730] transition-colors"
+                    href="#about">About</a>
+                <a class="text-[#33210d] dark:text-[#fbfbe2] hover:text-[#486730] transition-colors"
+                    href="#menu">Menu</a>
+                <a class="text-[#33210d] dark:text-[#fbfbe2] hover:text-[#486730] transition-colors"
+                    href="#location">Location</a>
+                <a class="text-[#33210d] dark:text-[#fbfbe2] hover:text-[#486730] transition-colors" href="#faq">FAQ</a>
+            </nav>
+            <button class="md:hidden text-primary">
+                <span class="material-symbols-outlined text-3xl">menu</span>
+            </button>
+        </div>
+    </header>
+    <main class="flex-grow">
+        <!-- Hero Section -->
+        <section class="relative pt-24 pb-32 px-6 lg:pt-32 lg:pb-40 overflow-hidden bg-surface-container">
+            <div class="max-w-7xl mx-auto grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
+                <div class="z-10 flex flex-col gap-8 lg:pr-12">
+                    <div
+                        class="inline-flex items-center gap-2 bg-tertiary-fixed-dim text-on-tertiary-fixed px-4 py-1.5 rounded-full w-fit">
+                        <span class="material-symbols-outlined text-sm"
+                            style="font-variation-settings: 'FILL' 1;">local_cafe</span>
+                        <span class="font-label text-xs uppercase tracking-[0.05em] font-medium">Coffee shop di
+                            Madiun</span>
+                    </div>
+                    <h1 class="text-5xl lg:text-7xl font-extrabold text-primary leading-[1.1] tracking-tight">
+                        Temukan Inspirasi di Setiap Seduhan.
+                    </h1>
+                    <p class="text-lg text-on-surface-variant max-w-lg leading-relaxed font-body">
+                        Kelana Coffee Space hadir sebagai tempat ngopi Madiun yang nyaman untuk melepas penat, merangkai
+                        ide, dan menikmati kopi enak Madiun dengan suasana tenang.
+                    </p>
+                    <div class="flex flex-col sm:flex-row gap-4 pt-4">
+                        <a class="bg-emerald-600 text-white px-8 py-4 rounded-md font-headline font-bold text-center hover:bg-emerald-700 transition-colors flex items-center justify-center gap-2"
+                            href="https://wa.me/6282234744844">
+                            <span class="material-symbols-outlined">forum</span>
+                            Hubungi Kami
+                        </a>
+                        <a class="bg-secondary-container text-on-secondary-fixed-variant px-8 py-4 rounded-md font-headline font-bold text-center hover:bg-secondary-fixed transition-colors flex items-center justify-center gap-2"
+                            href="#location">
+                            <span class="material-symbols-outlined">location_on</span>
+                            Lihat Lokasi
+                        </a>
+                    </div>
+                </div>
+                <div class="relative z-10 h-[500px] lg:h-[600px] w-full rounded-2xl overflow-hidden shadow-2xl">
+                    <img alt="Hero Image" class="w-full h-full object-cover"
+                        data-alt="High quality cinematic shot of a barista pouring latte art in a modern, earthy-toned cafe in Madiun, warm inviting lighting, shallow depth of field"
+                        src="c:\Users\Nisa\Downloads\LOKASICAFE.jpg" />
+                    <div class="absolute inset-0 bg-gradient-to-t from-black/40 to-transparent"></div>
+                </div>
+            </div>
+            <!-- Decorative blurred element -->
+            <div
+                class="absolute -top-40 -right-40 w-96 h-96 bg-secondary-container/50 rounded-full blur-3xl pointer-events-none">
+            </div>
+        </section>
+        <!-- About Us -->
+        <section class="py-24 px-6 bg-surface-container-low" id="about">
+            <div class="max-w-7xl mx-auto">
+                <div class="grid grid-cols-1 lg:grid-cols-12 gap-16 items-center">
+                    <div class="lg:col-span-5 flex flex-col gap-6">
+                        <h2 class="text-4xl lg:text-5xl font-bold text-primary">Sebuah Ajakan Untuk Berkelana.</h2>
+                        <div class="w-16 h-1 bg-secondary rounded-full"></div>
+                        <div class="text-on-surface-variant text-lg font-body leading-relaxed flex flex-col gap-4">
+                            <p>
+                                Nama "Kelana" bukan sekadar sebutan. Ia adalah undangan bagi Anda untuk meluangkan waktu
+                                sejenak dari hiruk-pikuk kota. Sebagai salah satu kafe hits Madiun, kami percaya bahwa
+                                secangkir kopi memiliki kekuatan untuk menjernihkan pikiran.
+                            </p>
+                            <p>
+                                Dengan desain ruang yang mengutamakan <em>Tonal Architecture</em> dan cahaya alami,
+                                setiap sudut Kelana Coffee Space dirancang untuk memberikan kenyamanan—baik untuk
+                                bekerja, berdiskusi, atau sekadar menikmati keheningan.
+                            </p>
+                        </div>
+                    </div>
+                   <div class="lg:col-span-7 grid grid-cols-12 gap-4">
+    <div class="col-span-7 rounded-2xl overflow-hidden shadow-sm h-[450px]">
+        <img alt="Suasana kafe" 
+             class="w-full h-full object-cover hover:scale-105 transition-transform duration-500"
+             src="c:\Users\Nisa\Downloads\SPACE.KELANA.jpg" />
+    </div>
+
+    <div class="col-span-5 grid grid-rows-2 gap-4">
+        <div class="rounded-2xl overflow-hidden shadow-sm h-[217px]">
+            <img alt="Kelana Cookies" 
+                 class="w-full h-full object-cover hover:scale-105 transition-transform duration-500"
+                 src="c:\Users\Nisa\Downloads\KELANA.COOKIES.jpg" />
+        </div>
+        <div class="rounded-2xl overflow-hidden shadow-sm h-[217px]">
+            <img alt="Detail interior" 
+                 class="w-full h-full object-cover hover:scale-105 transition-transform duration-500"
+                 src="c:\Users\Nisa\Downloads\MENU.KELANA.jpg" />
+        </div>
+    </div>
+</div>
+                </div>
+            </div>
+        </section>
+        <!-- Best Sellers -->
+        <section class="py-24 px-6 bg-surface-bright relative" id="menu">
+            <div class="max-w-7xl mx-auto">
+                <div class="text-center max-w-2xl mx-auto mb-16 flex flex-col items-center gap-4">
+                    <span class="font-label text-sm uppercase tracking-[0.05em] text-secondary font-semibold">Menu
+                        Andalan</span>
+                    <h2 class="text-4xl lg:text-5xl font-bold text-primary">Kopi Enak Madiun, Diseduh Penuh Cerita.</h2>
+                </div>
+                <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                    <!-- Item 1 -->
+                    <div
+                        class="bg-surface-container-lowest rounded-xl overflow-hidden group shadow-[0_8px_30px_rgb(27,29,14,0.04)] transition-transform hover:-translate-y-2 duration-300">
+                        <div class="h-64 overflow-hidden relative">
+                            <img alt="Vanilla Latte"
+                                class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105"
+                                data-alt="Aestheic glass of iced milk coffee on a stone coaster, condensation on glass, warm ambient cafe lighting"
+                                src="c:\Users\Nisa\Downloads\COFFEE.KELANA.jpg" />
+                            <div
+                                class="absolute top-4 right-4 bg-tertiary-fixed-dim text-on-tertiary-fixed px-3 py-1 rounded-full text-xs font-label font-bold tracking-wider">
+                                FAVORIT</div>
+                        </div>
+                        <div class="p-8 pt-10 flex flex-col gap-4 relative">
+                            <h3 class="text-2xl font-bold text-primary">Vanilla Latte</h3>
+                            <p class="text-on-surface-variant font-body leading-relaxed flex-grow">
+                                Paduan lembut espresso dan susu creamy dengan sentuhan aroma vanilla yang manis dan menenangkan.
+                                Pilihan klasik bagi kamu yang menyukai rasa kopi yang ringan dan elegan. 
+                            </p>
+                            <div class="flex items-end justify-between pt-4 mt-auto border-t border-outline-variant/30">
+                                <span class="text-lg font-bold text-secondary">Rp 18.000</span>
+                                <button aria-label="Order Es Kopi Susu"
+                                    class="text-primary hover:text-secondary transition-colors">
+                                    <span class="material-symbols-outlined text-3xl">add_circle</span>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Item 2 -->
+                    <div
+                        class="bg-surface-container-lowest rounded-xl overflow-hidden group shadow-[0_8px_30px_rgb(27,29,14,0.04)] transition-transform hover:-translate-y-2 duration-300">
+                        <div class="h-64 overflow-hidden relative">
+                            <img alt=" Snack & Main Course"
+                                class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105"
+                                data-alt="Barista carefully pouring hot water from a gooseneck kettle into a Chemex coffee maker, moody professional lighting"
+                                src="c:\Users\Nisa\Downloads\FOOD.KELANA.jpg" />
+                            <div
+                                class="absolute top-4 right-4 bg-surface-variant text-on-surface px-3 py-1 rounded-full text-xs font-label font-bold tracking-wider">
+                                Snack & Main Course</div>
+                        </div>
+                        <div class="p-8 pt-10 flex flex-col gap-4 relative">
+                            <h3 class="text-2xl font-bold text-primary">Snack & Main Course </h3>
+                            <p class="text-on-surface-variant font-body leading-relaxed flex-grow">
+                               Kombinasi berbagai macam kudapan favorit dalam satu piring besar yang cocok dinikmati bareng teman-teman.
+                               Pilihan paling seru untuk berbagi keceriaan sambil nongkrong lebih lama.
+                            </p>
+                            <div class="flex items-end justify-between pt-4 mt-auto border-t border-outline-variant/30">
+                                <span class="text-lg font-bold text-secondary">Rp 6.000 - 23.000</span>
+                                <button aria-label="Order Manual Brew"
+                                    class="text-primary hover:text-secondary transition-colors">
+                                    <span class="material-symbols-outlined text-3xl">add_circle</span>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Item 3 -->
+                    <div
+                        class="bg-surface-container-lowest rounded-xl overflow-hidden group shadow-[0_8px_30px_rgb(27,29,14,0.04)] transition-transform hover:-translate-y-2 duration-300">
+                        <div class="h-64 overflow-hidden relative">
+                            <img alt="Kopi Kala New Signature"
+                                class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105"
+                                data-alt="Refreshing colorful coffee mocktail in a tall glass with ice and rosemary garnish, bright airy cafe setting"
+                                src="c:\Users\Nisa\Downloads\DRINK.KELANA.jpg" />
+                        </div>
+                        <div class="p-8 pt-10 flex flex-col gap-4 relative">
+                            <h3 class="text-2xl font-bold text-primary">Kopi Kala New Signature</h3>
+                            <p class="text-on-surface-variant font-body leading-relaxed flex-grow">
+                               Rasakan perpaduan sempurna kopi pilihan dengan sentuhan hiasan unik yang memanjakan mata sekaligus lidah.
+                               Menu baru paling ikonik yang wajib kamu coba untuk melengkapi momen nongkrongmu.
+                            </p>
+                            <div class="flex items-end justify-between pt-4 mt-auto border-t border-outline-variant/30">
+                                <span class="text-lg font-bold text-secondary">Rp 21.000</span>
+                                <button aria-label="Order Signature Mocktail"
+                                    class="text-primary hover:text-secondary transition-colors">
+                                    <span class="material-symbols-outlined text-3xl">add_circle</span>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="mt-12 flex justify-center">
+                    <a class="inline-flex items-center gap-2 text-primary border-b-2 border-tertiary pb-1 font-headline font-bold hover:text-secondary hover:border-secondary transition-colors"
+                        href="#">
+                        Lihat Menu Lengkap <span class="material-symbols-outlined text-sm">arrow_forward</span>
+                    </a>
+                </div>
+            </div>
+        </section>
+
+        <!-- Lokasi -->
+         <section id="location" class="py-20 bg-white">
+    <div class="container mx-auto px-6">
+        <h2 class="text-3xl font-bold text-amber-950 mb-10 text-center uppercase tracking-widest">Lokasi Kami</h2>
+        
+        <div class="flex flex-col md:flex-row gap-10 items-start">
+            <div class="w-full md:w-1/3 space-y-5">
+                <div class="border-l-4 border-amber-800 pl-4">
+                    <h3 class="text-2xl font-bold text-gray-800">Kelana Coffee Space</h3>
+                    <p class="text-gray-600 mt-2">
+                       Jl. Serayu Timur No.156-160, Pandean, <br>
+                        Kec. Taman, Kota Madiun, Jawa Timur 63133
+                    </p>
+                </div>
+                
+                <div class="pt-4">
+                    <h4 class="font-bold text-amber-900">Jam Operasional:</h4>
+                    <p class="text-gray-600 text-sm">Senin - Minggu: 08.00 - 23.00 WIB</p>
+                </div>
+
+                <a href="https://maps.google.com" target="_blank" class="inline-block bg-amber-900 text-white px-8 py-3 rounded-lg hover:bg-amber-800 transition-all shadow-lg text-sm font-bold">
+                    PETUNJUK JALAN
+                </a>
+            </div>
+
+            <div class="w-full md:w-2/3 overflow-hidden rounded-2xl shadow-2xl border-4 border-white">
+                <iframe 
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3954.3103645776227!2d111.52989577404209!3d-7.649737292366418!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e79bf0614733957%3A0xc20e090bf09424d1!2sKelana%20coffee%20space!5e0!3m2!1sen!2sid!4v1776753936618!5m2!1sen!2sid" 
+                    class="w-full h-[450px]" 
+                    style="border:0;" 
+                    allowfullscreen="" 
+                    loading="lazy" 
+                    referrerpolicy="no-referrer-when-downgrade">
+                </iframe>
+            </div>
+        </div>
+    </div>
+</section>
+
+        <!-- FAQ -->
+         <section id="faq" class="py-20 bg-amber-50">
+    <div class="container mx-auto px-6 max-w-3xl">
+        <h2 class="text-3xl font-bold text-amber-950 mb-10 text-center uppercase tracking-widest">Tanya Jawab (FAQ)</h2>
+        
+        <div class="space-y-4">
+            <details class="group bg-white rounded-xl shadow-sm border border-amber-100 overflow-hidden">
+                <summary class="flex justify-between items-center p-6 cursor-pointer list-none font-bold text-amber-900 uppercase text-sm tracking-tight">
+                    <span>Apakah cocok untuk WFC (Work From Cafe)?</span>
+                    <span class="transition group-open:rotate-180">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" viewBox="0 0 256 256"><path d="M213.66,101.66l-80,80a8,8,0,0,1-11.32,0l-80-80a8,8,0,0,1,11.32-11.32L128,164.69l74.34-74.35a8,8,0,0,1,11.32,11.32Z"></path></svg>
+                    </span>
+                </summary>
+                <div class="px-6 pb-6 text-gray-600 text-sm leading-relaxed border-t border-gray-50 pt-4">
+                    Sangat cocok! Kami menyediakan akses Wi-Fi gratis berkecepatan tinggi dan tersedia banyak titik stopkontak (colokan) di hampir setiap meja untuk kenyamanan bekerja Anda.
+                </div>
+            </details>
+
+            <details class="group bg-white rounded-xl shadow-sm border border-amber-100 overflow-hidden">
+                <summary class="flex justify-between items-center p-6 cursor-pointer list-none font-bold text-amber-900 uppercase text-sm tracking-tight">
+                    <span>Bagaimana dengan area parkir?</span>
+                    <span class="transition group-open:rotate-180">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" viewBox="0 0 256 256"><path d="M213.66,101.66l-80,80a8,8,0,0,1-11.32,0l-80-80a8,8,0,0,1,11.32-11.32L128,164.69l74.34-74.35a8,8,0,0,1,11.32,11.32Z"></path></svg>
+                    </span>
+                </summary>
+                <div class="px-6 pb-6 text-gray-600 text-sm leading-relaxed border-t border-gray-50 pt-4">
+                    Kami memiliki area parkir yang cukup memadai untuk kendaraan roda dua maupun roda empat. Tersedia petugas keamanan yang siap membantu merapikan kendaraan Anda.
+                </div>
+            </details>
+
+            <details class="group bg-white rounded-xl shadow-sm border border-amber-100 overflow-hidden">
+                <summary class="flex justify-between items-center p-6 cursor-pointer list-none font-bold text-amber-900 uppercase text-sm tracking-tight">
+                    <span>Apakah tersedia area Outdoor & Merokok?</span>
+                    <span class="transition group-open:rotate-180">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" viewBox="0 0 256 256"><path d="M213.66,101.66l-80,80a8,8,0,0,1-11.32,0l-80-80a8,8,0,0,1,11.32-11.32L128,164.69l74.34-74.35a8,8,0,0,1,11.32,11.32Z"></path></svg>
+                    </span>
+                </summary>
+                <div class="px-6 pb-6 text-gray-600 text-sm leading-relaxed border-t border-gray-50 pt-4">
+                    Tersedia area semi-outdoor dan outdoor yang asri bagi Anda yang ingin menikmati udara segar atau merokok sambil berbincang santai.
+                </div>
+            </details>
+
+            <details class="group bg-white rounded-xl shadow-sm border border-amber-100 overflow-hidden">
+                <summary class="flex justify-between items-center p-6 cursor-pointer list-none font-bold text-amber-900 uppercase text-sm tracking-tight">
+                    <span>Ada menu selain kopi?</span>
+                    <span class="transition group-open:rotate-180">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" viewBox="0 0 256 256"><path d="M213.66,101.66l-80,80a8,8,0,0,1-11.32,0l-80-80a8,8,0,0,1,11.32-11.32L128,164.69l74.34-74.35a8,8,0,0,1,11.32,11.32Z"></path></svg>
+                    </span>
+                </summary>
+                <div class="px-6 pb-6 text-gray-600 text-sm leading-relaxed border-t border-gray-50 pt-4">
+                    Ada banyak pilihan! Kami menyediakan berbagai varian Artisan Tea, Chocolate, Matcha, hingga Refreshing Drinks untuk Anda yang tidak ingin mengonsumsi kafein.
+                </div>
+            </details>
+        </div>
+    </div>
+</section>
+
+        <!-- Footer -->
+        <footer class="bg-[#f5f5dc] dark:bg-[#1b1d0e] w-full border-t border-[#d2c4ba]/30">
+            <div
+                class="flex flex-col md:flex-row justify-between items-center w-full px-8 py-12 gap-6 max-w-7xl mx-auto">
+                <div class="font-['Manrope'] font-bold text-[#33210d] dark:text-[#fbfbe2] text-xl">
+                    Kelana Coffee Space
+                </div>
+                <div class="flex flex-wrap justify-center gap-6 font-['Inter'] text-sm leading-relaxed">
+                    <a class="text-[#33210d]/70 dark:text-[#fbfbe2]/70 hover:text-[#486730] transition-colors"
+                        href="#">Privacy Policy</a>
+                    <a class="text-[#33210d]/70 dark:text-[#fbfbe2]/70 hover:text-[#486730] transition-colors"
+                        href="#">Terms of Service</a>
+                    <a class="text-[#33210d]/70 dark:text-[#fbfbe2]/70 hover:text-[#486730] transition-colors"
+                        href="#">Local SEO Guide</a>
+                    <a class="text-[#33210d]/70 dark:text-[#fbfbe2]/70 hover:text-[#486730] transition-colors"
+                        href="#">Coffee Sourcing</a>
+                </div>
+                <div
+                    class="font-['Inter'] text-sm leading-relaxed text-[#33210d]/70 dark:text-[#fbfbe2]/70 text-center md:text-right">
+                    © 2024 Kelana Coffee Space Madiun. Crafted for the Grounded Editorial.
+                </div>
+            </div>
+        </footer>
+    </main>
+    <!-- Schema Markup -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "CafeOrCoffeeShop",
+      "name": "Kelana Coffee Space",
+      "image": "image-hero",
+      "@id": "",
+      "url": "https://www.kelanacoffeespace.com",
+      "telephone": "082234744844",
+      "address": {
+        "@type": "PostalAddress",
+        "streetAddress": "Jl. Kelana Raya No.1",
+        "addressLocality": "Madiun",
+        "addressRegion": "Jawa Timur",
+        "postalCode": "63111",
+        "addressCountry": "ID"
+      },
+      "geo": {
+        "@type": "GeoCoordinates",
+        "latitude": -7.6298,
+        "longitude": 111.5239
+      },
+      "openingHoursSpecification": {
+        "@type": "OpeningHoursSpecification",
+        "dayOfWeek": [
+          "Monday",
+          "Tuesday",
+          "Wednesday",
+          "Thursday",
+          "Friday",
+          "Saturday",
+          "Sunday"
+        ],
+        "opens": "08:00",
+        "closes": "23:00"
+      },
+      "priceRange": "$$",
+      "servesCuisine": "Coffee, Beverages, Light Snacks"
+    }
+    </script>
+</body>
+
+</html>
