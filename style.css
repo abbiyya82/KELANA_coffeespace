@@ -1,1 +1,69 @@
 @import "tailwindcss";
+
+@theme {
+  /* --- Colors --- */
+  --color-surface-container-lowest: #ffffff;
+  --color-on-tertiary-fixed-variant: #51461e;
+  --color-inverse-on-surface: #f2f2d9;
+  --color-on-background: #1b1d0e;
+  --color-on-tertiary-fixed: #231b00;
+  --color-on-secondary-container: #4e6d36;
+  --color-secondary: #486730;
+  --color-tertiary-fixed: #f3e2ac;
+  --color-primary-container: #4b3621;
+  --color-on-primary-container: #bd9f83;
+  --color-on-primary-fixed: #291806;
+  --color-surface-container: #efefd7;
+  --color-surface-variant: #e4e4cc;
+  --color-background: #fbfbe2;
+  --color-on-tertiary: #ffffff;
+  --color-outline: #80756c;
+  --color-primary: #33210d;
+  --color-on-error-container: #93000a;
+  --color-secondary-container: #c9eea9;
+  --color-on-surface-variant: #4e453d;
+  --color-primary-fixed-dim: #e1c1a4;
+  --color-surface-container-highest: #e4e4cc;
+  --color-on-error: #ffffff;
+  --color-surface-dim: #dbdcc3;
+  --color-surface-bright: #fbfbe2;
+  --color-on-secondary-fixed-variant: #314e1b;
+  --color-error-container: #ffdad6;
+  --color-on-secondary: #ffffff;
+  --color-error: #ba1a1a;
+  --color-tertiary-fixed-dim: #d6c692;
+  --color-on-tertiary-container: #493f17;
+  --color-inverse-primary: #e1c1a4;
+  --color-inverse-surface: #303221;
+  --color-secondary-fixed: #c9eea9;
+  --color-on-secondary-fixed: #0b2000;
+  --color-outline-variant: #d2c4ba;
+  --color-secondary-fixed-dim: #aed18f;
+  --color-surface-container-high: #eaead1;
+  --color-on-primary: #ffffff;
+  --color-on-surface: #1b1d0e;
+  --color-surface-container-low: #f5f5dc;
+  --color-tertiary: #6a5e33;
+  --color-tertiary-container: #baaa79;
+  --color-primary-fixed: #fedcbe;
+  --color-surface-tint: #725a42;
+  --color-surface: #fbfbe2;
+  --color-on-primary-fixed-variant: #59422c;
+
+  /* --- Border Radius --- */
+  --radius-default: 0.25rem;
+  --radius-lg: 0.5rem;
+  --radius-xl: 0.75rem;
+  --radius-full: 9999px;
+
+  /* --- Font Family --- */
+  --font-headline: "Manrope", sans-serif;
+  --font-body: "Inter", sans-serif;
+  --font-label: "Inter", sans-serif;
+}
+/* Gunakan variabel yang sudah kita buat tadi */
+body {
+  font-family: var(--font-body);
+  background-color: var(--color-background);
+  color: var(--color-on-background);
+}

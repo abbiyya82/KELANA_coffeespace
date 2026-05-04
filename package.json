@@ -4,13 +4,28 @@
   "description": "",
   "main": "index.js",
   "scripts": {
+    "dev": "vite",
+    "build": "vite build",
+    "preview": "vite preview",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
   "dependencies": {
-    "@tailwindcss/cli": "^4.2.3",
-    "tailwindcss": "^4.2.3"
-  }
+    "@tailwindcss/cli": "^4.2.3"
+  },
+  "devDependencies": {
+    "@tailwindcss/vite": "^4.2.4",
+    "tailwindcss": "^4.2.4",
+    "vite": "^8.0.10"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/abbiyya82/KELANA_coffeespace.git"
+  },
+  "bugs": {
+    "url": "https://github.com/abbiyya82/KELANA_coffeespace/issues"
+  },
+  "homepage": "https://github.com/abbiyya82/KELANA_coffeespace#readme"
 }
